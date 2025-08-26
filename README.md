@@ -1,6 +1,6 @@
-# Kopeechka API Documentation
+# Kopechka API Documentation
 
-Kopeechka API is a RESTful API that allows you to programmatically manage temporary email addresses. With this API, you can create orders, retrieve email contents, and perform account operations.
+Kopechka API is a RESTful API that allows you to programmatically manage temporary email addresses. With this API, you can create orders, retrieve email contents, and perform account operations.
 
 ## Base URL
 
