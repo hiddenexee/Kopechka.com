@@ -409,7 +409,7 @@ curl -X DELETE "https://api.kopechka.com/api/v1/orders/API-1234567890" \
 
 For questions about the API:
 - Telegram: @kopechka_support
-- Email: support@kopechka.com
+- Email: info@kopechka.com
 - Website: https://kopechka.com
 
 ## License
