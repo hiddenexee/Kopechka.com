@@ -283,65 +283,6 @@ Starts email polling process for an order. This endpoint is required to fetch ne
 }
 ```
 
-### Transaction History
-
-#### Transaction List
-```http
-GET /transactions?page=1&limit=10&type=mail_purchase
-```
-
-Lists the user's transaction history.
-
-**Query Parameters:**
-- `page` (optional): Page number (default: 1)
-- `limit` (optional): Records per page (default: 10)
-- `type` (optional): Transaction type filter
-
-**Response:**
-```json
-{
-  "success": true,
-  "data": [
-    {
-      "id": "transaction_id",
-      "type": "mail_purchase",
-      "amount": 5.00,
-      "description": "Mail purchase - API-1234567890",
-      "status": "completed",
-      "createdAt": "2024-01-01T00:00:00Z"
-    }
-  ],
-  "pagination": {
-    "page": 1,
-    "limit": 10,
-    "total": 50,
-    "pages": 5
-  }
-}
-```
-
-### General Settings
-
-#### Get General Settings
-```http
-GET /settings/public
-```
-
-Retrieves the application's general settings. This endpoint does not require an API key.
-
-**Response:**
-```json
-{
-  "success": true,
-  "data": {
-    "site_name": "Kopeechka",
-    "min_order_amount": 1.00,
-    "max_order_amount": 100.00,
-    "default_order_duration": 10
-  }
-}
-```
-
 ## Code Examples
 
 ### JavaScript (Node.js)
